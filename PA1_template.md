@@ -112,7 +112,7 @@ qplot(steps, data=act.day)
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](unnamed-chunk-7-1.png)
 
 >3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -150,7 +150,7 @@ Next we plot the average daily steps against the intervals:
 ggplot(act.int, aes(interval, steps)) + geom_line()
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](unnamed-chunk-10-1.png)
 
 >2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -220,7 +220,7 @@ qplot(steps, data=act.day.imp)
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png)
+![plot of chunk unnamed-chunk-16](unnamed-chunk-16-1.png)
 
 ```r
 mean(act.day.imp$steps)
@@ -279,4 +279,4 @@ act.int$weekend <- as.factor(act.int$weekend)
 ggplot(act.int, aes(interval, steps)) + geom_line() + facet_grid(weekend ~ .)
 ```
 
-![plot of chunk unnamed-chunk-20](figure/unnamed-chunk-20-1.png)
+![plot of chunk unnamed-chunk-20](unnamed-chunk-20-1.png)
